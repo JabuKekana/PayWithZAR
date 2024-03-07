@@ -1,0 +1,21 @@
+﻿@model IEnumerable<FinancialData>
+
+<h1>Smart FinEx Pro</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <!-- Add other headers based on the data you want to display -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Symbol</td>
+                <!-- Add other cells based on the data you want to display -->
+            </tr>
+        }
+    </tbody>
+</table>
